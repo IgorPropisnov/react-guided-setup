@@ -17,6 +17,22 @@ $color-grey: #282c34;
     margin: .5em;
 }
 
+.stepIndicator {
+    span {
+        font-size: 1.5em;
+        color: lighten($color-grey, 50%);
+        vertical-align: middle;
+        margin: 0 5px;
+    }
+}
+
+span.active {
+    color: darken($color-grey, 50%);
+    font-size: 2em;
+    top: -2px;
+    position: relative;
+}
+
 .button {
     padding: 1em;
     background:  $color-grey;

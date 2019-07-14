@@ -44,6 +44,13 @@ class GuidedSetup extends React.Component {
                 </div>
                 <button disabled={this.state.step === this.state.minStep} onClick={this.prevStep} className={styles.button}>Prev Step</button>
                 <button disabled={this.state.step === this.state.maxStep} onClick={this.nextStep} className={styles.button}>Next Step</button>
+                <div className={styles.stepIndicator}>
+                    <span className={ this.state.step === 1 ? styles.active : '' }>•</span>
+                    <span className={ this.state.step === 2 ? styles.active : '' }>•</span>
+                    <span className={ this.state.step === 3 ? styles.active : '' }>•</span>
+                    <span className={ this.state.step === 4 ? styles.active : '' }>•</span>
+                    <span className={ this.state.step === 5 ? styles.active : '' }>•</span>
+                </div>
             </div>
         )
     }
