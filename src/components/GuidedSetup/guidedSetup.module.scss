@@ -1,0 +1,32 @@
+$color-grey: #282c34;
+
+.wrapper {
+    background-color: #fff;
+    color: $color-grey;
+    padding: 1em;
+    width: 50vw;
+    height: 75vh;
+}
+
+// .stepWrapper {
+    
+// }
+
+.step {
+    border: 1px solid $color-grey;
+    margin: .5em;
+}
+
+.button {
+    padding: 1em;
+    background:  $color-grey;
+    color: #fff;
+    border: 0;
+    margin: 1em;
+    position: relative;
+    cursor: pointer;
+
+    &:disabled {
+        background: #bbb;
+    }
+}
