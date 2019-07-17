@@ -52,11 +52,11 @@ class GuidedSetup extends React.Component {
                 <button disabled={this.state.step === this.state.minStep} onClick={this.prevStep} className={styles.button}>Prev Step</button>
                 <button disabled={this.state.step === this.state.maxStep} onClick={this.nextStep} className={styles.button}>Next Step</button>
                 <div className={styles.stepIndicator}>
-                    <span id="1" onClick={(e) => this.moveToStep(e.target.id)} className={ this.state.step === 1 ? styles.active : '' }>•</span>
-                    <span id="2" onClick={(e) => this.moveToStep(e.target.id)} className={ this.state.step === 2 ? styles.active : '' }>•</span>
-                    <span id="3" onClick={(e) => this.moveToStep(e.target.id)} className={ this.state.step === 3 ? styles.active : '' }>•</span>
-                    <span id="4" onClick={(e) => this.moveToStep(e.target.id)} className={ this.state.step === 4 ? styles.active : '' }>•</span>
-                    <span id="5" onClick={(e) => this.moveToStep(e.target.id)} className={ this.state.step === 5 ? styles.active : '' }>•</span>
+                    <span data-indicator="1" onClick={(e) => this.moveToStep(e.target.dataset.indicator)} className={ this.state.step === 1 ? styles.active : '' }>•</span>
+                    <span data-indicator="2" onClick={(e) => this.moveToStep(e.target.dataset.indicator)} className={ this.state.step === 2 ? styles.active : '' }>•</span>
+                    <span data-indicator="3" onClick={(e) => this.moveToStep(e.target.dataset.indicator)} className={ this.state.step === 3 ? styles.active : '' }>•</span>
+                    <span data-indicator="4" onClick={(e) => this.moveToStep(e.target.dataset.indicator)} className={ this.state.step === 4 ? styles.active : '' }>•</span>
+                    <span data-indicator="5" onClick={(e) => this.moveToStep(e.target.dataset.indicator)} className={ this.state.step === 5 ? styles.active : '' }>•</span>
                 </div>
             </div>
         )
