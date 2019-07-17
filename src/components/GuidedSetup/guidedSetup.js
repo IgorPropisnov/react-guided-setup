@@ -39,11 +39,11 @@ class GuidedSetup extends React.Component {
                     {
                         this.state.step && (
                             <>
-                                {this.state.step === 1 && (<div className={styles.step}>Step 1</div>)}
-                                {this.state.step === 2 && (<div className={styles.step}>Step 2</div>)}
-                                {this.state.step === 3 && (<div className={styles.step}>Step 3</div>)}
-                                {this.state.step === 4 && (<div className={styles.step}>Step 4</div>)}
-                                {this.state.step === 5 && (<div className={styles.step}>Step 5</div>)}
+                                {this.state.step === 1 && (<div className={styles.step}>Step 1 (productline)</div>)}
+                                {this.state.step === 2 && (<div className={styles.step}>Step 2 (hoseserie)</div>)}
+                                {this.state.step === 3 && (<div className={styles.step}>Step 3 (hosesize)</div>)}
+                                {this.state.step === 4 && (<div className={styles.step}>Step 4 (fittingstyle)</div>)}
+                                {this.state.step === 5 && (<div className={styles.step}>Step 5 (2 profile records)</div>)}
                             </>
                         )
                     }
